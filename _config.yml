@@ -1,0 +1,36 @@
+# Site settings
+title: Sandy Wolf
+sub_title: LCSW
+email: sandywolf@snet.net
+phone_number: 8605318250
+phone_number_formatted: 860-232-8250
+work_org: Sandy Wolf, LLC
+work_link: http://www.sandywolf.com
+description: Licensed Clinical Social Worker
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+exclude: [vendor]
+sass:
+  style: :compressed
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+#Default Settings
+defaults: 
+  - 
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: Sandy Wolf
+      category: design
+      permalink: /blog/:title/
+  - 
+    scope: 
+      path: ""
+      type: "pages"
+    values:
+      layout: "page" 

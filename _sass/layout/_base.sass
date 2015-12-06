@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300|Lobster)
+body, html
+  padding: 0
+  margin: 0
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  background-color: $white
+  @extend %default-font
+*, *::before, *::after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+a
+  color: $link-color
+  text-decoration: none
+  @extend %default-transition
+  &:visited
+    color: $link-color
+  &:hover, &:focus, &:active
+    color: $link-hover-color
+  img
+    border: none
+svg
+  width: 24px
+  height: 24px

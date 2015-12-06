@@ -1,0 +1,9 @@
+_site
+.sass-cache
+.DS_Store
+*/.DS_Store
+.ruby-version
+.ruby-gemset
+vendor
+# Apache Server Configs v2.11.0 | MIT License
+.jekyll-metadata
