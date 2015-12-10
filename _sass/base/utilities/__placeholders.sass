@@ -2,14 +2,28 @@
   transition: all .2s ease-in-out
 %default-box-shadow
   box-shadow: 0 7px 9px -7px rgba($black, .05)
-%wf-loading
-  .wf-loading &
-    opacity: .05
-  .wf-active &
-    +animation(fade_in)
+%default-text-shadow
+  text-shadow: 0 -1px 0 darken($color-light-gray, 20%)
+
+%clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
 
 %branding-font
-  font-family: 'Lobster', cursive
+  font-family: 'Oswald', sans-serif
   font-weight: normal
+  text-transform: uppercase
+%sans-serif-font
+  font-family: 'Oswald', sans-serif
+%serif-font
+  font-family: 'Quattrocento', serif
 %default-font
-  font-family: 'Merriweather', serif
+  font-family: 'Quattrocento', serif
+
+
+// =transform($transform)
+//   -webkit-transform: $transform
+//   -ms-transform: $transform
+//   transform: $transform

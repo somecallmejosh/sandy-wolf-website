@@ -1,12 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300|Lobster)
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento:400,700)
 body, html
   padding: 0
   margin: 0
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  background-color: $white
+  background-color: lighten($color-light-gray, 24%)
   @extend %default-font
+  font-size: $base-font-size
+
 *, *::before, *::after
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
@@ -16,12 +15,20 @@ a
   color: $link-color
   text-decoration: none
   @extend %default-transition
-  &:visited
-    color: $link-color
   &:hover, &:focus, &:active
     color: $link-hover-color
   img
     border: none
-svg
-  width: 24px
-  height: 24px
+
+ul, ol, li 
+  padding: 0
+  margin: 0
+
+.view 
+  background-color: #fff
+  width: 50%
+  margin: 0 auto
+  padding: $large-padding
+  p, li 
+    font-size: 1rem
+    line-height: 1.5rem
