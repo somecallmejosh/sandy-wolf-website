@@ -1,14 +1,11 @@
 header
-  background-color: $color-light-gray
   padding: 0 $medium-padding
   @extend %default-box-shadow
   @extend %clearfix
-  margin-bottom: 2rem
   a 
     color: white
-    @extend %default-text-shadow
     &:hover 
-      color: $color-tan
+      color: darken($color-light-gray, 30%)
   h1 
     @extend %branding-font
     font-size: 1.5rem
@@ -20,13 +17,3 @@ header
       @extend %default-font
   .site--title
     float: left
-  nav 
-    float: right
-    @extend %sans-serif-font
-    li 
-      display: inline-block
-      vertical-align: middle
-    a 
-      display: block
-      padding: 0 $default-padding
-      line-height: 4rem
