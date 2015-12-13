@@ -24,64 +24,36 @@ ul, ol, li
   padding: 0
   margin: 0
 
+.pull-left
+  float: left
+  margin: 0 $default-padding $default-padding 0
+.pull-right
+  float: right
+  margin-left: 0 0 $default-padding $default-padding
+
 .view 
   background-color: #fff
   width: 100%
   margin: 0 auto
   h1, h2, h3, h4, h5, h6 
     color: $headline-color
+  ul, ol 
+    margin-left: $large-padding
   p, li 
     font-size: 1rem
     line-height: 1.5rem
     color: $text-color
-.page-banner
-  +media-max(800px)
-    +flex-direction(column-reverse)
-    margin-bottom: $default-padding
-    [class*="col-"]
-      padding: 0 $default-padding
-    h1 
-      font-size: 2rem
+  .full-header
+    width: 100%
+    text-align: center
+    line-height: 2rem
+    padding: $small-padding 0 $medium-padding
+    background-color: white
+    border-bottom: $tan 1px solid
     p 
-      font-size: 1.5rem
-      line-height: 1.5rem
-  +media-min(800px)
-    +flex-align-items(center)
-    margin-bottom: 0
-    padding: 0 $large-padding
-    [class*="col-"]
-      padding: $large-padding
-    h1 
-      font-size: 3rem
-    p 
-      font-size: 2rem
-      line-height: 2.5rem
-  strong, em
-    color: $green
-.content-hilite
-  background-color: $brown
-  padding: $large-padding
-  +media-min(600px)
-    -webkit-column-count: 2 /* Chrome, Safari, Opera */
-    -moz-column-count: 2 /* Firefox */
-    column-count: 2
-    -webkit-column-gap: $large-padding /* Chrome, Safari, Opera */
-    -moz-column-gap: $large-padding /* Firefox */
-    column-gap: $large-padding
-    -webkit-column-rule-style: solid /* Chrome, Safari, Opera */
-    -moz-column-rule-style: solid /* Firefox */
-    column-rule-style: solid
-    -webkit-column-rule-width: 1px /* Chrome, Safari, Opera */
-    -moz-column-rule-width: 1px /* Firefox */
-    column-rule-width: 1px
-    -webkit-column-rule-color: lighten($brown, 10%) /* Chrome, Safari, Opera */
-    -moz-column-rule-color: lighten($brown, 10%) /* Firefox */
-    column-rule-color: lighten($brown, 10%)
-  +media-min(900px)
-    -webkit-column-count: 3 /* Chrome, Safari, Opera */
-    -moz-column-count: 3 /* Firefox */
-    column-count: 3
-  p, h2 
-    color: darken($tan, 5%)
-  strong
-    color: white
+      max-width: 600px
+      margin: 0 auto
+      color: lighten($text-color, 30%)
+      font-style: italic
+      font-size: .75rem
+      line-height: 1rem

@@ -1,0 +1,14 @@
+.service-teasers
+  [class*="col-"]
+    +media-max(700px)
+      padding: $default-padding
+    +media-min(700px)
+      padding: $medium-padding
+    p, li, h1, h2, h3, h4
+      color: white
+    &:first-child
+      background-color: $orange
+    &:nth-child(2)
+      background-color: $brown
+    &:nth-child(3)
+      background-color: $blue
