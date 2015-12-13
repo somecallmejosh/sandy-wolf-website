@@ -35,5 +35,10 @@
 .row 
   +display-flex
   max-width: 100%
+  +media-max(800px)
+    +flex-wrap(wrap)
 .col-50 
-  +flex(1 0 50%)
+  +media-max(800px)
+    min-width: 100%
+  +media-min(800px)
+    +flex(1 0 50%)

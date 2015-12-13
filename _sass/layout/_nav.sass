@@ -1,9 +1,20 @@
 nav 
-  float: right
   @extend %sans-serif-font
-  li 
-    display: inline-block
-    vertical-align: middle
+  +media-min(800px) 
+    +flex-justify-content(flex-end)
+  ul
+    text-align: center 
+    +display-flex
+    +media-max(800px)
+      +flex-wrap(wrap)
+    +media-min(800px) 
+      +flex-justify-content(flex-end)
+  li
+    +media-max(800px)
+      +flex(1 0 33.333333%)
+    +media-min(800px) 
+      +flex(1)
+    list-style: none
   a 
     display: block
     padding: 0 $default-padding

@@ -34,16 +34,30 @@ ul, ol, li
     font-size: 1rem
     line-height: 1.5rem
     color: $text-color
-.page-banner 
-  +flex-align-items(center)
-  padding: 0 $large-padding
-  h1 
-    font-size: 3rem
-  p 
-    font-size: 2rem
-    line-height: 2.5rem
-  [class*="col-"]
-    padding: $large-padding
+.page-banner
+  +media-max(800px)
+    +flex-direction(column-reverse)
+    margin-bottom: $default-padding
+    [class*="col-"]
+      padding: 0 $default-padding
+    h1 
+      font-size: 2rem
+    p 
+      font-size: 1.5rem
+      line-height: 1.5rem
+  +media-min(800px)
+    +flex-align-items(center)
+    margin-bottom: 0
+    padding: 0 $large-padding
+    [class*="col-"]
+      padding: $large-padding
+    h1 
+      font-size: 3rem
+    p 
+      font-size: 2rem
+      line-height: 2.5rem
+  strong, em
+    color: $green
 .content-hilite
   background-color: $brown
   padding: $large-padding

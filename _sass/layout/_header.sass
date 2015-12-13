@@ -1,5 +1,11 @@
 header
-  padding: 0 $medium-padding
+  +media-max(800px)
+    .site--title 
+      text-align: center
+      padding: 0 $default-padding
+      border-bottom: darken($tan, 10%) 1px solid
+  +media-min(800px)
+    padding: 0 $medium-padding
   @extend %clearfix
   a 
     color: $brown
@@ -17,5 +23,3 @@ header
       @extend %default-font
     a:hover 
       color: lighten($brown, 20%)
-  .site--title
-    float: left

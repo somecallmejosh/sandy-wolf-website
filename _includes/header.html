@@ -1,11 +1,11 @@
 {% capture location %}{{page.url | split:'/'}}{% endcapture %}
-<header>
-  <div class="site--title">
+<header class="row">
+  <div class="col-50 site--title">
     <h1>
       <a href="{{ site.baseurl }}/">{{ site.title }}, <span>{{site.sub_title}}</span></a>
     </h1>
   </div>
-  <nav>
+  <nav class="col-50">
     <ul class="nav--main">
       <li {% if page.active %} class="active"{% endif %}> <a href="{{site.baseurl}}/">Home</a></li>
       {% for page in site.pages %}
