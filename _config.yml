@@ -7,7 +7,7 @@ phone_number_formatted: 860-232-8250
 work_org: Sandy Wolf, LCSW
 work_link: http://www.sandywolf.com
 description: Licensed Clinical Social Worker
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/sandy-wolf-website" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 exclude: [vendor]
 sass:
@@ -18,9 +18,9 @@ markdown: kramdown
 permalink: /:title
 
 #Default Settings
-defaults: 
-  - 
-    scope: 
+defaults:
+  -
+    scope:
       path: ""
       type: "posts"
     values:
@@ -28,9 +28,9 @@ defaults:
       author: Sandy Wolf
       category: design
       permalink: /blog/:title/
-  - 
-    scope: 
+  -
+    scope:
       path: ""
       type: "pages"
     values:
-      layout: "page" 
+      layout: "page"
