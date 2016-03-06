@@ -20,7 +20,7 @@ a
   img
     border: none
 
-ul, ol, li 
+ul, ol, li
   padding: 0
   margin: 0
 
@@ -31,15 +31,15 @@ ul, ol, li
   float: right
   margin-left: 0 0 $default-padding $default-padding
 
-.view 
+.view
   background-color: #fff
   width: 100%
   margin: 0 auto
-  h1, h2, h3, h4, h5, h6 
+  h1, h2, h3, h4, h5, h6
     color: $headline-color
-  ul, ol 
+  ul, ol
     margin-left: $large-padding
-  p, li 
+  p, li
     font-size: 1rem
     line-height: 1.5rem
     color: $text-color
@@ -50,10 +50,15 @@ ul, ol, li
     padding: $small-padding 0 $medium-padding
     background-color: white
     border-bottom: $tan 1px solid
-    p 
+    p
       max-width: 600px
       margin: 0 auto
       color: lighten($text-color, 30%)
       font-style: italic
       font-size: .75rem
       line-height: 1rem
+    +media-max(800px)
+      p
+        padding: 0 $default-padding
+        font-size: 1rem
+        line-height: 1.25rem

@@ -1,21 +1,18 @@
-nav 
+nav
   @extend %sans-serif-font
-  +media-min(800px) 
+  +media-min(800px)
     +flex-justify-content(flex-end)
   ul
-    text-align: center 
+    text-align: center
     +display-flex
     +media-max(800px)
       +flex-wrap(wrap)
-    +media-min(800px) 
+      +flex-justify-content(center)
+    +media-min(800px)
       +flex-justify-content(flex-end)
   li
-    +media-max(800px)
-      +flex(1 0 20%)
-    +media-min(800px) 
-      +flex(1)
     list-style: none
-  a 
+  a
     display: block
     padding: 0 $default-padding
     line-height: 4rem
