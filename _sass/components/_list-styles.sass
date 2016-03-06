@@ -1,0 +1,20 @@
+ul.inline-list
+  width: 100%
+  margin: 0 0 $large-padding
+  padding: 0
+  li
+    list-style: none
+    padding: $small-padding
+    background-color: lighten($tan, 4%)
+    border-bottom: $color-tan 1px solid
+    margin-bottom: $small-padding
+  +media-max(800px)
+    li
+      display: block
+      width: 100%
+  +media-min(800px)
+    +display-flex
+    +flex-wrap(wrap)
+    +flex-justify-content(space-between)
+    li
+      width: 32%
