@@ -25,8 +25,12 @@ ul, ol, li
   margin: 0
 
 .pull-left
-  float: left
-  margin: 0 $default-padding $default-padding 0
+  +media-max(800px)
+    float: none
+    display: block
+  +media-min(800px)
+    float: left
+    margin: 0 $default-padding $default-padding 0
 .pull-right
   float: right
   margin-left: 0 0 $default-padding $default-padding
@@ -39,10 +43,16 @@ ul, ol, li
     color: $headline-color
   ul, ol
     margin-left: $large-padding
-  p, li
+  p, li, address
     font-size: 1rem
     line-height: 1.5rem
     color: $text-color
+  address
+    display: block
+    font-style: normal
+    p
+      line-height: 1em
+      padding: 0
   .full-header
     width: 100%
     text-align: center

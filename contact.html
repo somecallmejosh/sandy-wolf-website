@@ -11,7 +11,15 @@ weight: 4
     <p>“How absurd human beings are and how magnificent”-- Benjamin Zander</p>
   </div>
   <div class="content">
-    <p class="call-out">Telephone: <a href="tel:{{site.phone_number}}">{{site.phone_number_formatted}}</a></p>
+    <p class="call-out">
+      Telephone: <a href="tel:{{site.phone_number}}">{{site.phone_number_formatted}}</a>
+    </p>
+    <address class="call-out">
+      <p><strong>Address:</strong></p>
+      <div class="street-address">{{site.street_address}}</div>
+      <span class="city">{{site.city}}</span>, <span class="state">{{site.locale}}</span>
+      <span class="postal-code">{{site.zip}}</span>
+    </address>
     <p class="call-out">Email: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
   </div>
 </div>
