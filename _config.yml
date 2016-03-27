@@ -7,7 +7,7 @@ phone_number_formatted: 203.488.5114
 street_address: 1090 Main Street
 city: Branford
 locale: CT
-zip: 06045
+zip: "06045"
 work_org: Sandy E. Wolf, LCSW
 work_link: http://www.sandywolf.com
 description: Licensed Clinical Social Worker
