@@ -11,8 +11,8 @@ zip: 06045
 work_org: Sandy E. Wolf, LCSW
 work_link: http://www.sandywolf.com
 description: Licensed Clinical Social Worker
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+baseurl: "/sandy-wolf-website" # the subpath of your site, e.g. /blog/
+url: "http://somecallmejosh.github.io" # the base hostname & protocol for your site
 exclude: [vendor]
 sass:
   style: :compressed
